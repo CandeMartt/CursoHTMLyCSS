@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Candela Martinez">
+        <meta name="description" content="Aqui se pone la descripcion del sitio web">
+        <meta name="keywords" content="tutoriales, html, desarrollo web">
+        <title>Estructura del cuerpo</title>
+        <link rel="icon" href="img/icon_pagina_web.png">
+    </head>
+
+    <body>
+        <header>
+            <div id="logotipo">Logotipo</div>
+        </header>
+        <nav>Barra de navegacion</nav>
+
+        <section>Seccion principal</section>
+
+        <aside>
+            <div class="noticias">Noticia 1</div>
+            <div class="noticias">Noticia 2</div>
+            <div class="noticias">Noticia 3</div>
+        </aside>
+
+        <article>Articulo</article>
+
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <h3>Titulo</h3>
+        <h4>Titulo</h4>
+        <h5>Titulo</h5>
+        <h6>Titulo</h6>
+
+        <p>Esto es un <b>parrafo</b>,<br> esto es otro parrafo</p>
+
+        <hr>
+
+        <a href="#">Vinculo</a>
+
+        <center>
+            <h3>Formulario</h3>
+            <form>
+                <label for="texto">Entrada de texto</label>
+                <input id="texto" type="text" placeholder="Entrada de texto" value="" required>
+
+                <br>
+                <br>
+
+                <label for="correo">Entrada de correo</label>
+                <input id="correo" type="email" placeholder="Entrada de correo" value="" required>
+
+                <br>
+                <br>
+
+                <label for="contraseña">Entrada de contraseña</label>
+                <input id="contraseña" type="password" placeholder="Entrada de contraseña" value="" required>
+
+                <br>
+                <br>
+
+                <label for="numero">Entrada de numero</label>
+                <input id="number" type="number" placeholder="Entrada de numero" value="1" min="0" max="3">
+
+                <br>
+                <br>
+
+                <label for="rojo">Rojo</label> <input id="rojo" type="checkbox">
+                <label for="amarillo">Amarillo</label> <input id="amarillo" type="checkbox">
+                <label for="verde">Verde</label> <input id="verde" type="checkbox">
+
+                <br>
+                <br>
+
+                <label for="blanco">Blanco</label> <input id="blanco" type="radio" name="radio" checked>
+                <label for="negro">Negro</label> <input id="negro" type="radio" name="radio">
+
+                <br>
+                <br>
+
+                <select>
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                    <option>Opcion 3</option>
+                </select>
+
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar formulario">
+            </form>
+        </center>
+
+
+        <figure>
+            <img src="img/imagen_1.jpg" style="height: 500px; width: 1000px">
+        </figure>
+
+        <figcaption>Pie de página a  la imagen</figcaption>
+
+        <ol>
+            <li>Carro</li>
+            <li>Barco</li>
+            <li>Avión</li>
+        </ol>
+
+        <ul>
+            <li>Carro</li>
+            <li>Barco</li>
+            <li>Avión</li>
+        </ul>
+
+        <!-- Tabla -->
+        <table border="1">
+            <thead>
+                <!-- Fila 1 -->
+                <tr>
+                    <!-- Columnas -->
+                    <th>MES</th>
+                    <th>AHORRO</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <!-- Fila 2 -->
+                <tr>
+                    <!-- Columnas -->
+                    <td>Enero</td>
+                    <td>$1000</td>
+                </tr>
+
+                <!-- Fila 3 -->
+                <tr>
+                    <!-- Columnas -->
+                    <td>Febrero</td>
+                    <td>$2000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Resultados del Examen</h1>
+        <!-- En value establecemos el valor y con min y max indicamos cual sera el valor minimo y el maximo.
+             Con el atributo high indicamos que los valores mas altos es a partir de los 90 (en este caso). -->
+        <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+        <p>Andrés: <meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+        <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+
+        <h2>Resultados de Ventas</h2>
+        <p>Enero: <progress value="94" min="0" max="100"></progress></p>
+        <p>Febrero: <progress value="60" min="0" max="100"></progress></p>
+        <p>Marzo <progress value="85" min="0" max="100" high="90"></progress></p>
+        <p>Abril: <progress value="45" min="0" max="100" high="90"></progress></p>
+
+        <audio autoplay controls loop preload="auto">
+            <source src="audio/Sleepmakeswaves - It's Dark, It's Cold, It's Winter.mp3" type="audio/mp3">
+        </audio>
+
+        <video autoplay controls loop height="500" width="700">
+            <source src="video/Miley Cyrus - Angels Like You (Official Video).mp4" type="video/mp4">
+        </video>
+
+        <iframe width="500" height="280" src="https://www.youtube.com/embed/i90BYpMBd34" frameborder="0" allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23899163665!2d-64.27661268800762!3d-31.399280322328618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1687136195993!5m2!1ses!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <footer>Este es el pie de página</footer>
+    </body>
+</html>
